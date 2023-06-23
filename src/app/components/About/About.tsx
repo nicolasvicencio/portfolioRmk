@@ -1,29 +1,38 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
 
 export default function About({}: Props) {
   return (
-    <div className="w-full h-screen flex flex-col  justify-center">
+    <div
+      className="w-full h-screen flex flex-col justify-center my-10"
+      id="about"
+    >
       <article className="mx-6 md:w-[80%] md:mx-auto">
         <div className="flex flex-col items-center gap-2">
-          <h1 className="text-5xl">About</h1>
-          <span className="bg-[#735D4E] h-1 w-16 rounded-s mb-4"></span>
-          <p>
+          <h1 className="title">About</h1>
+          <span className="subline "></span>
+          <p className="text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
             alias dolor modi, itaque
           </p>
         </div>
 
         <div className="my-24 flex flex-col gap-6 items-center md:flex-row md:justify-around">
-          <div className="md:w-[50%]">
-            <h3 className="text-xl mb-4">A little about me!</h3>
-            <p>
+          <div className="md:w-[50%] flex flex-col gap-8">
+            <h3 className="text-xl ">A little about me!</h3>
+            <p className="text ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Officiis, commodi eligendi quis laboriosam cumque qui veniam
               ullam, ipsam distinctio sed, saepe assumenda praesentium debitis
               nihil dolorum earum beatae itaque. Itaque?{" "}
             </p>
+            <div className="flex justify-center md:justify-start">
+              <Link href="#contact" scroll={false} className="btn btn-primary ">
+                Contact
+              </Link>
+            </div>
           </div>
           <div className="md:w-[50%]">
             <h3 className="text-xl mb-4">Skills</h3>
@@ -33,6 +42,7 @@ export default function About({}: Props) {
               <p className="chip">React</p>
               <p className="chip">NextJs</p>
               <p className="chip">React Native</p>
+              <p className="chip">TailwindCss</p>
               <p className="chip">NodeJs</p>
               <p className="chip">Express</p>
               <p className="chip">MongoDB</p>

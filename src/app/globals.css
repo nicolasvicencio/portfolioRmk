@@ -8,9 +8,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth !important;
 }
 a {
-  @apply no-underline hover:text-[#31211A];
+  @apply no-underline;
 }
 
 .header_img {
@@ -32,12 +33,24 @@ a {
   background-position: center;
   filter: brightness(20%);
 }
+
+input,
+textarea {
+  @apply p-4 bg-gray-100 rounded-s;
+}
+
+label {
+  @apply text-gray-700 py-2 px-2 text-sm;
+}
 .icon {
   @apply text-2xl;
 }
+.featured_icon {
+  @apply text-3xl text-gray-500 hover:text-white;
+}
 
 .btn {
-  @apply py-2 px-4 rounded-s w-auto;
+  @apply py-3 px-6 rounded-s w-auto;
 }
 
 .btn-primary {
@@ -49,5 +62,19 @@ a {
 }
 
 .chip {
-  @apply border rounded-s border-gray-300 px-2 py-1;
+  @apply border rounded-s border-gray-300 px-2 py-1 text-gray-600;
+}
+
+.subline {
+  @apply bg-[#735D4E] h-2 w-10 rounded-s my-4;
+}
+.title {
+  @apply text-5xl font-bold;
+}
+
+.text {
+  @apply text-gray-600;
+}
+.selector_button_project {
+  @apply p-4 px-20 border border-gray-300 rounded-md shadow transition-all;
 }
