@@ -18,12 +18,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="w-full h-auto p-4">
-          <div className="w-[90%] mx-auto flex justify-between ">
-            <TypeAnimationComponent />
-            <nav className="flex gap-2  ">
+        <header className="w-full h-auto p-4 shadow-md bg-transparent text-white absolute">
+          <div className="w-[90%] mx-auto flex justify-between flex items-center">
+            <div className="flex gap-4 items-center">
+              <img
+                src="/profile.jpg"
+                alt="profile"
+                className="h-10 w-10 rounded-full border-orange-500 "
+              />
+              <h1 className="text-xl">Nicolas Vicencio</h1>
+            </div>
+            <nav className="flex gap-6  ">
               <Link href="/">Home</Link>
-              <Link href="/">About me</Link>
+              <Link href="/">About</Link>
               <Link href="/">Projects</Link>
               <Link href="/">Contact me</Link>
             </nav>
