@@ -54,11 +54,11 @@ label {
 }
 
 .btn-primary {
-  @apply bg-[#735D4E] text-white;
+  @apply bg-amber-900 text-white;
 }
 
 .btn-outline {
-  @apply border border-white rounded-s bg-transparent text-white hover:bg-[#31211A];
+  @apply border border-white rounded-s bg-transparent text-white hover:bg-red-400;
 }
 
 .chip {
@@ -66,7 +66,7 @@ label {
 }
 
 .subline {
-  @apply bg-[#735D4E] h-2 w-10 rounded-s my-4;
+  @apply bg-amber-900 h-1 w-10 rounded-s my-4;
 }
 .title {
   @apply text-5xl font-bold;
@@ -77,4 +77,18 @@ label {
 }
 .selector_button_project {
   @apply p-4 px-20 border border-gray-300 rounded-md shadow transition-all;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in 2s ease-in forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

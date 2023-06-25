@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { Raleway } from "next/font/google";
 import { SiLinkedin, SiArchlinux, SiGithub } from "react-icons/si";
 
 type Props = {};
@@ -38,10 +39,10 @@ export default function Featured({}: Props) {
             </div>
             <div className="flex justify-evenly gap-2 md:w-[50%]">
               <Link className="btn btn-outline" scroll={false} href="#projects">
-                Check my projects
+                My projects
               </Link>
               <Link className="btn btn-outline" scroll={false} href="#contact">
-                Contact me
+                Contact
               </Link>
             </div>
           </div>

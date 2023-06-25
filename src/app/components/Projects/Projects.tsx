@@ -1,40 +1,23 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import Web from "./Web";
 import Mobile from "./Mobile";
 
 type Props = {};
 
 export default function Projects({}: Props) {
-  const [toggleProjects, setToggleProjects] = useState<boolean>(true);
   return (
     <article className="h-auto w-[80%] mx-auto " id="projects">
-      <div className="flex flex-col items-center my-40 ">
-        <h3 className="title">Projects</h3>
+      <div className="flex flex-col items-center gap-2">
+        <h1 className="title">Projects</h1>
         <span className="subline "></span>
-        <div className="flex gap-6">
-          <button
-            onClick={() => setToggleProjects(true)}
-            className={`selector_button_project ${
-              toggleProjects && "bg-[#735D4E] text-white"
-            }`}
-          >
-            Web
-          </button>
-          <button
-            onClick={() => setToggleProjects(false)}
-            className={`selector_button_project ${
-              !toggleProjects && "bg-[#735D4E] text-white"
-            }`}
-          >
-            Mobile
-          </button>
-        </div>
+        <p className="text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, alias
+          dolor modi, itaque
+        </p>
       </div>
-      {toggleProjects && <Web />}
-      {!toggleProjects && <Mobile />}
+      <Web />
+      <Mobile />
     </article>
   );
 }

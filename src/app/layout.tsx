@@ -1,14 +1,10 @@
-import { Inter } from "next/font/google";
+import { Inter, Raleway } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "NicoDev Portfolio",
-  description: "Frontend developer react",
-};
-
+const raleway = Raleway({ subsets: ["latin"] });
 export default function RootLayout({
   children,
 }: {
@@ -16,8 +12,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <header className="w-full h-auto p-4 shadow-md text-white fixed z-10 bg-[#0B0B0D] ">
+      <body className={raleway.className}>
+        <header className="w-full h-auto p-4 shadow-md text-white absolute z-10 bg-transparent">
           <div className="w-[90%] mx-auto flex justify-between items-center">
             <Link
               href={"#home"}
@@ -42,7 +38,7 @@ export default function RootLayout({
                 Projects
               </Link>
               <Link scroll={false} href="#contact">
-                Contact me
+                Contact
               </Link>
             </nav>
           </div>

@@ -6,7 +6,7 @@ type Props = {};
 export default function About({}: Props) {
   return (
     <div
-      className="w-full h-screen flex flex-col justify-center my-10"
+      className="fade-in w-full h-screen flex flex-col justify-center my-10"
       id="about"
     >
       <article className="mx-6 md:w-[80%] md:mx-auto">
@@ -19,7 +19,7 @@ export default function About({}: Props) {
           </p>
         </div>
 
-        <div className="my-24 flex flex-col gap-6 items-center md:flex-row md:justify-around">
+        <div className="my-24 flex flex-col gap-6  md:flex-row md:justify-around">
           <div className="md:w-[50%] flex flex-col gap-8">
             <h3 className="text-xl ">A little about me!</h3>
             <p className="text ">

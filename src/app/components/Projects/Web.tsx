@@ -8,10 +8,10 @@ export default function Web({}: Props) {
     <>
       <div className="flex my-40 flex-col-reverse justify-center gap-4 md:flex-row-reverse md:justify-around md:items-center ">
         <div className="flex flex-col gap-4 items-center md:w-[40%] md:items-start ">
-          <h4 className="text-xl">Decotortas Website</h4>
+          <h4 className="text-xl">Keep Blog</h4>
           <p className="text">
-            Website for a small company dedicated to the sale of custom cakes.
-            Made in Wordpres.
+            My personal Blog, where I share about new technologies that I've
+            learned, linux customization and tech articles.
           </p>
           <Link
             href="https://fabioladecotortas.cl/"
@@ -22,7 +22,7 @@ export default function Web({}: Props) {
         </div>
         <div className="md:w-[45%]">
           <img
-            src={"/portfolio1-template.png"}
+            src={"/portfolio-web-2.png"}
             className="w-auto h-auto rounded-s"
           />
         </div>
@@ -43,7 +43,7 @@ export default function Web({}: Props) {
         </div>
         <div className="md:w-[45%]">
           <img
-            src={"/portfolio1-template.png"}
+            src={"/portfolio-web-1.png"}
             className="w-auto h-auto rounded-s"
           />
         </div>
