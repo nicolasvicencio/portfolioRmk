@@ -1,3 +1,4 @@
+import WaveAnimated from "@/app/animate/WaveAnimated";
 import Link from "next/link";
 import React from "react";
 
@@ -5,7 +6,7 @@ type Props = {};
 
 export default function About({}: Props) {
   return (
-    <div
+    <WaveAnimated
       className="fade-in w-full h-screen flex flex-col justify-center my-10"
       id="about"
     >
@@ -54,6 +55,6 @@ export default function About({}: Props) {
           </div>
         </div>
       </article>
-    </div>
+    </WaveAnimated>
   );
 }

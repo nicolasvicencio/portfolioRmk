@@ -1,9 +1,9 @@
-import { Inter, Raleway } from "next/font/google";
+import { Inter, Raleway, Open_Sans } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-
+const open = Open_Sans({subsets: ['latin']})
 const raleway = Raleway({ subsets: ["latin"] });
 export default function RootLayout({
   children,
@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body className={open.className}>
         <header className="w-full h-auto p-4 shadow-md text-white absolute z-10 bg-transparent">
           <div className="w-[90%] mx-auto flex justify-between items-center">
             <Link
