@@ -8,7 +8,10 @@ export default function Contact({}: Props) {
   const [message, setMessage] = useState<string>("");
 
   return (
-    <article className="h-screen md:w-[50%] mx-auto mt-40" id="contact">
+    <article
+      className="h-screen md:w-[50%] mx-auto mt-40 flex flex-col justify-center"
+      id="contact"
+    >
       <div className="flex flex-col items-center">
         <h1 className="title">Contact</h1>
         <span className="subline"> </span>

@@ -36,7 +36,7 @@ a {
 
 input,
 textarea {
-  @apply p-4 bg-gray-100 rounded-s;
+  @apply p-4 bg-gray-200 rounded-s;
 }
 
 label {
@@ -50,11 +50,11 @@ label {
 }
 
 .btn {
-  @apply py-3 px-6 rounded-s w-auto;
+  @apply py-3 px-6 rounded-md w-auto;
 }
 
 .btn-primary {
-  @apply bg-amber-900 text-white;
+  @apply bg-primary text-white;
 }
 
 .btn-outline {
