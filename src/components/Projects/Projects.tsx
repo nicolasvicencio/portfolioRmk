@@ -24,8 +24,6 @@ export default function Projects({}: Props) {
         </div>
       </div>
       <Web />
-
-      <Mobile />
     </article>
   );
 }

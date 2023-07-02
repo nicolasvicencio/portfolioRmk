@@ -1,11 +1,12 @@
 import React from "react";
+import { MacIcon } from "../icons";
 
 type Props = {};
 
 export default function About({}: Props) {
   return (
     <div
-      className="h-screen w-[80%] mx-auto flex flex-col justify-center items-evenly "
+      className="min-h-screen w-[90%] mx-auto flex flex-col justify-center items-evenly "
       id="about"
     >
       {" "}
@@ -18,9 +19,9 @@ export default function About({}: Props) {
           Developing websites with purpose since the dinosaurs!
         </h3>
       </div>
-      <article className="mx-6 md:w-[80%] md:mx-auto">
-        <div className="my-24 flex flex-col gap-6  md:flex-row md:justify-around">
-          <div className="md:w-[50%] flex flex-col gap-2">
+      <article className="mx-6 flex flex-col md:w-[80%] md:mx-auto md:flex-row md:gap-10 md:justify-between ">
+        <div className="my-24 md:w-[55%] flex flex-col gap-8 ">
+          <div className="flex flex-col gap-2">
             <h3 className="text-md text-subtitle font-semibold text-xl flex-6">
               A little about me!
             </h3>
@@ -32,7 +33,7 @@ export default function About({}: Props) {
             </p>
           </div>
 
-          <div className="md:w-[50%] flex flex-col gap-2">
+          <div className="flex flex-col gap-2">
             <h3 className="text-xl font-semibold mb-2 text-subtitle">Skills</h3>
 
             <div className="flex gap-4 flex-wrap">
@@ -52,6 +53,9 @@ export default function About({}: Props) {
             </div>
           </div>
         </div>
+        <section className="flex justify-center items-center">
+          <MacIcon />
+        </section>
       </article>
     </div>
   );
