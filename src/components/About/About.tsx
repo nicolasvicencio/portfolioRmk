@@ -16,20 +16,21 @@ export default function About({}: Props) {
           <span className="bg-primary h-1 w-1/5 rounded-full"></span>
         </div>
         <h3 className="text-center text-content font-semibold text-title text-xl">
-          Developing websites with purpose since the dinosaurs!
+          Developing websites with purpose!
         </h3>
       </div>
       <article className="mx-6 flex flex-col md:w-[80%] md:mx-auto md:flex-row md:gap-10 md:justify-between ">
-        <div className="my-24 md:w-[55%] flex flex-col gap-8 ">
+        <div className="my-24 md:w-[55%] flex flex-col gap-10 ">
           <div className="flex flex-col gap-2">
-            <h3 className="text-md text-subtitle font-semibold text-xl flex-6">
+            <h3 className="text-md text-subtitle font-semibold text-xl mb-2">
               A little about me!
             </h3>
             <p className="text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Officiis, commodi eligendi quis laboriosam cumque qui veniam
-              ullam, ipsam distinctio sed, saepe assumenda praesentium debitis
-              nihil dolorum earum beatae itaque. Itaque?{" "}
+              Hi I'm Nicolas Vicencio programmer analyst. I'm passionate about
+              the Tech industry and the construction of Web pages. I'm mainly
+              dedicated to the front end of Web sites (layout, design, UX, UI) I
+              enjoy learning new technologies and different ways of working. My
+              goal is to help you build the website you want.
             </p>
           </div>
 

@@ -58,7 +58,7 @@ label {
 }
 
 .btn-outline {
-  @apply border border-white rounded-s bg-transparent text-white hover:bg-red-400;
+  @apply border border-white rounded-s bg-transparent text-white hover:bg-primary;
 }
 
 .chip {
