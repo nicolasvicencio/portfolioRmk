@@ -4,6 +4,14 @@ import "./globals.css";
 
 const open = Open_Sans({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "Web Developer, Nicolas Vicencio",
+  description: "Web Developer, Nicolas Vicencio",
+  icons: {
+    icon: "/icon.png",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
