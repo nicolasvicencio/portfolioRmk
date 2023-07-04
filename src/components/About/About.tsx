@@ -19,7 +19,7 @@ export default function About({}: Props) {
           Developing websites with purpose!
         </h3>
       </div>
-      <article className="mx-6 flex flex-col md:w-[80%] md:mx-auto md:flex-row md:gap-10 md:justify-between ">
+      <article className="mx-6 flex flex-col-reverse md:w-[80%] md:mx-auto md:flex-row md:gap-10 md:justify-between ">
         <div className="my-24 md:w-[55%] flex flex-col gap-10 ">
           <div className="flex flex-col gap-2">
             <h3 className="text-md text-subtitle font-semibold text-xl mb-2">

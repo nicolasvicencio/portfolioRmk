@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Services({}: Props) {
   return (
-    <section id="services" className="h-screen w-full bg-stone-100 py-20">
+    <section id="services" className="min-h-screen w-full bg-stone-100 py-20">
       <div className="w-[80%] h-full mx-auto flex flex-col items-center justify-center gap-8">
         <div className="flex flex-col gap-6">
           <div className="w-[30%] mx-auto flex flex-col gap-4 items-center">
@@ -18,7 +18,7 @@ export default function Services({}: Props) {
           </h3>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-evenly gap-4 my-3">
+        <div className="flex flex-col md:flex-row justify-evenly gap-4 my-10">
           <article className="flex flex-col items-center gap-4 p-8 rounded-md text-center shadow-xl bg-white">
             <WebIcon className="text-primary" />
             <h3 className="text-xl font-semibold  text-gray-700">
