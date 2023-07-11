@@ -8,7 +8,7 @@ export const metadata = {
   title: "Web Developer, Nicolas Vicencio",
   description: "Web Developer, Nicolas Vicencio",
   icons: {
-    icon: "/icon.png",
+    icon: "/favicon.ico",
   },
 };
 
